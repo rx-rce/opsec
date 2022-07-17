@@ -1,60 +1,99 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body, html {
-	padding: 10px;
-	background-color: black;
-	color: white;
-	text-rendering: optimizeLegibility;
+body {
+  font-family: Arial;
+  color: white;
+  padding: 10px;
+  background: black;
 }
 
-.header {
-	text-align: center;
+.header h1 {
+  font-size: 50px;
 }
 
-.leftpart {
-    float: left;
-    width: 75%;
+.leftside {   
+  float: left;
+  width: 75%;
 }
 
-div {
-	display: block;
-}
-
-h3, a {
-	color: red;
-}
-
-p {
-	font-size: 25px;
-}
-
-h2, h1 {
-	display: block;
-	font-size: 1.5em;
-	margin-block-start: 0.83em;
-	margin-block-end: 0.83em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	font-weight: bold;
-}
-
-h5 {
-	display: block;
-    font-size: 0.83em;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.rightside {
+  float: left;
+  width: 25%;
+  background-color: black;
+  padding-left: 20px;
 }
 
 .card {
-	color: #000;
-	background-color: #aaa;
-	padding: 20px;
-	margin-top: 20px;
+  color: black;
+  background-color: #72C6FF;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: #red;
+}
+
+a:active {
+  color: blue;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 1em;
+}
+
+button:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+input {
+  padding: 1em;
+  border: none;
+  outline: 2px solid black;
+  background-color: transparent;
+}
+
+li {
+  text-align: left;
+  padding-bottom: 1em;
 }
